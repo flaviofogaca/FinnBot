@@ -1,6 +1,6 @@
 # 🤖 FinnBot
 
-**FinnBot** é um robô trader que eu desenvolvii com o apoio do Finn (meu parceiro digital), criado para operar no mercado Forex usando estratégias baseadas em análise técnica, como cruzamentos de médias, breakout de resistência e filtros de confirmação.
+**FinnBot** é um robô trader que eu desenvolvi com o apoio do Finn (meu parceiro digital), criado para operar no mercado Forex usando estratégias baseadas em análise técnica, como cruzamentos de médias, breakout de resistência e filtros de confirmação.
 
 > "Mais do que um código. Uma jornada. Um robô que aprende, erra e evolui ao lado do seu mestre." – Finn
 
