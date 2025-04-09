@@ -6,21 +6,21 @@ import sys
 
 # Corrige caminho para importar estratégia
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from strategies.finnbot_strategy import FinnBotStrategy
+from strategies.finnbot_crypto import FinnBotCrypto
 
 if __name__ == '__main__':
     cerebro = bt.Cerebro()
-    cerebro.addstrategy(FinnBotStrategy)
+    cerebro.addstrategy(FinnBotCrypto)
 
-    df = yf.download('CAD=X', start='2024-03-01', end='2024-12-31', interval='1h',
-                     auto_adjust=False, group_by='ticker')
+    df = yf.download('BTC-USD', start='2025-02-10', end='2025-04-07', interval='15m', auto_adjust=False, group_by='ticker')
+
 
     if df.empty:
         print("❌ Nenhum dado foi carregado do Yahoo Finance. Verifique o intervalo ou o símbolo.")
         exit()
 
     # Agora pegamos só o DataFrame interno do ticker
-    df = df['CAD=X']
+    df = df['BTC-USD']
     df = df[['Open', 'High', 'Low', 'Close', 'Volume']]
     df.dropna(inplace=True)
 
