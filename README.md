@@ -51,7 +51,7 @@
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/finnbot.git
+git clone https://github.com/flaviofogaca/FinnBot
 cd finnbot
 
 # Criar ambiente virtual (opcional mas recomendado)
